@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+html,body{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/002/208/140/original/cartoon-comic-halftone-background-free-vector.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+

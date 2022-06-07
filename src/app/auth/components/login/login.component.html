@@ -1,0 +1,30 @@
+<div class="d-flex justify-content-start h-100">
+    <div class="card">
+        <!-- Titulo -->
+        <div class="card-header">
+            <h3 class="text-light">Inicio de sesión</h3>
+        </div>
+        <!-- Cuerpo -->
+        <div class="card-body">
+            <!-- formulario -->
+            <form [formGroup]="form" (ngSubmit)="login()">
+                <div class="input-group form-group">
+                    <input formControlName="email" type="text" class="form-control" placeholder="Correo">
+                </div>
+                <div id="emailHelp" class="form-text text-danger"  *ngIf="getError('email')">Ingrese un correo valido.</div>
+                <div class="input-group form-group">
+                    <input formControlName="password" type="password" class="form-control mt-4" placeholder="Contraseña">
+                </div>
+                <div id="emailHelp" class="form-text text-danger" *ngIf="getError('password')">Contraseña invalida.</div>
+                <div class="form-group float-end">
+                    <button type="submit" class="btn btn-primary mt-3">Entrar</button>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer">
+            <div class="d-flex justify-content-center text-light">
+                No tienes cuenta?<a routerLink="../register" class="mx-2">Registrarse</a>
+            </div>
+        </div>
+    </div>
+</div>
